@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background: #29313f;
+  font-family: "Quicksand", sans-serif;
+}
+
+body {
+  color: white;
+}
+
+.active {
+  background: rgba(250, 0, 0, 0.5);
+  padding: 5px 20px;
+  border-radius: 10px;
+}
+
+/* breadcrumbs */
+.breadcrumbs {
+  max-width: 1200px;
+  margin: 10px 20px;
+}
+.breadcrumbs > * {
+  display: inline-block;
+  margin-right: 10px;
+}
+.breadcrumbs .crumb::after {
+  content: ">";
+  margin-left: 10px;
+}
+
+.breadcrumbs .crumb:last-child::after {
+  display: none;
+}
+
+.breadcrumbs .crumb {
+  color: gray;
+}
+.breadcrumbs .crumb:hover {
+  color: white;
+}
